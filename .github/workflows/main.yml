@@ -15,5 +15,5 @@ jobs:
       - name: Build & Push Image
         run: |
           echo "${{ secrets.DOCKERPW }}" | docker login -u "govindsingh277@gmail.com" --password-stdin
-          docker image build -t govind17/flaskapp:v1 .
-          docker push govind17/flaskapp:v1
+          docker image build -t govind17/flaskapp:v2 .
+          docker push govind17/docker101tutorial:v2
